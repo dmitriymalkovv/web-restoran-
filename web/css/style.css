@@ -211,3 +211,44 @@ body {
 .header__button:hover {
   color: #734a29;
 }
+
+.cards__holder {
+  display: flex;
+  justify-content: center;
+}
+
+.cards__card {
+  width: 349px;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  margin-right: 31px;
+  background-color: #fff;
+  margin-top: -69px;
+  padding: 0px 10px;
+}
+
+.cards__image {
+  display: flex;
+  justify-content: center;
+  padding-top: 31px;
+}
+
+.cards__title {
+  font-family: "Tinos", serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cards__title span {
+  padding-left: 5px;
+  color: #BC9060;
+}
+
+.cards__desc {
+  font-family: "Tinos", serif;
+  text-align: center;
+  color: #656363;
+  font-size: 24px;
+  font-weight: 400;
+}
