@@ -1,0 +1,39 @@
+@media (max-width: 1100px) {
+  .header__title {
+    position: static;
+  }
+  .header__suptitle::after, .header__suptitle::before {
+    content: none;
+  }
+  .menu__items {
+    display: block;
+  }
+  .menu__item {
+    margin: 20px auto;
+  }
+  .galery__content {
+    display: block;
+  }
+  .galery__img,
+  .galery__up,
+  .galery__down {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .galery__img {
+    margin-bottom: 20px;
+  }
+  .galery__left {
+    margin-right: 0;
+  }
+  .cook__content {
+    display: block;
+  }
+  .cook__content img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+}
