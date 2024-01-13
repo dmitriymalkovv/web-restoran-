@@ -1,5 +1,10 @@
 //Адаптив
 
+@media (max-width:1260px){
+    .history__images{
+        display: none;
+        }
+}
 @media (max-width:1100px){
     .header__title{
         position: static;
@@ -9,11 +14,34 @@
             content: none;
         }
     }
+    .header__navigation,
+    .header__cart,
+    .header__phone,
+    .header__btn{
+        display: none;
+    }
+    .header__line{
+        justify-content: space-between;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .burger__pizza{
+        display: none;
+    }
+    .cards__holder{
+        display: block;
+    }
+    .cards__card{
+        margin: 20px auto;
+        height: 290px;
+    }
     .menu__items{
         display: block;
     }
     .menu__item{
         margin: 20px auto;
+        width: 310px;
     }
     .galery__content{
         display: block;
@@ -43,5 +71,28 @@
 }
 
 @media (max-width:1110px){
-    
+    .black__holder{
+        display: block;
+    }
+    .black__title,
+    .black__text,
+    .black__button{
+        text-align: center;
+    }
+    .black__button{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 850px){
+    .history__title{
+        width: 100%;
+    }
+    .none{
+        display: none;
+    }
+    .galery__img-adaptive{
+        display: block;
+        margin-bottom: 30px;
+    }
 }
