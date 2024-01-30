@@ -142,10 +142,9 @@ body{
 }
 .cards__holder{
     display: flex;
-    justify-content: center;
 }
 .cards__card{
-    width: 349px;
+    width: 100%;
     box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10);
     margin-right: 31px;
     background-color: #fff;
@@ -184,7 +183,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
 .history__title {
     font-family: 'Tinos', serif; 
     color: #000;
