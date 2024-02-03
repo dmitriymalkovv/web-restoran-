@@ -8,24 +8,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&familyPT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&family=Tinos&display=swap');
-//Верстка
 body{
-    margin: 0;
+    overflow-x: hidden;
 }
+
+html{
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 0 166px;
+}
+
+.burger__menu{
+    display: none;
+}
+
+.coment__text-adaptive{
+    display: none;
+}
+
+.galery__up-adaptive, .galery__down-adaptive{
+    display: none;
+}
+
 .header{
     background-image: url(../img/bg.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.burger__menu{
-    display: none;
-}
-.galery__img-adaptive{
-    display: none;
-}
-.container {
-    margin: 0px 166px;
 }
 .header__line {
     padding-top: 50px;
@@ -124,7 +135,7 @@ body{
         width: 61px;
         background-color: #fff;
         top: 151px;
-        left: 346px;
+        left: 374px;
     }
 }
 .header__button{
@@ -176,6 +187,7 @@ body{
     font-weight: 400;
 }
 .history {
+    justify-content: center;
     margin-top: 166px;
     padding-bottom: 200px;
 }
@@ -240,6 +252,17 @@ body{
         left: -102px;
     }
 }
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Tinos', serif; 
+    background-color: #c4bfbf;
+    padding: 50px 0px;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+}
 
 .black {
     background-image: url(../img/black-bg.png);
@@ -272,6 +295,7 @@ body{
     font-size: 14px;
     font-weight: 700;
 }
+
 .dishes__title{
     font-family: 'Tinos', serif;
     text-align: center;
@@ -375,8 +399,7 @@ body{
 }
 .coment {
     background-color: #E5E5E5;
-    padding-top: 104px;
-    padding-bottom: 139px;
+    padding: 104px 0px;
 }
 .coment__text {
     font-family: 'Open Sans', sans-serif;
@@ -424,9 +447,12 @@ body{
 .galery__left {
     margin-right: 20px;
 }
-.galery__down, .galery__up{
+.galery__middle, .galery__up{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+.galery__up-preadaptive{
     margin-bottom: 20px;
 }
 .cook {
@@ -445,18 +471,9 @@ body{
 }
 .cook__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     img{
-        margin-left: -85px;
-        margin-right: 113px;
+        margin-right: 20px;
     }
-}
-.footer{
-    font-family: 'Tinos', serif; 
-    background-color: #c4bfbf;
-    padding: 50px 0px;
-    text-align: center;
-    color: #000;
-    font-size: 24px;
 }
