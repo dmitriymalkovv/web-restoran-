@@ -74,7 +74,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 166px;
+}
+
+.burger__menu {
+  display: none;
+}
+
+.coment__text-adaptive {
+  display: none;
+}
+
+.galery__up-adaptive, .galery__down-adaptive {
+  display: none;
 }
 
 .header {
@@ -82,18 +102,6 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.burger__menu {
-  display: none;
-}
-
-.galery__img-adaptive {
-  display: none;
-}
-
-.container {
-  margin: 0px 166px;
 }
 
 .header__line {
@@ -205,7 +213,7 @@ body {
   width: 61px;
   background-color: #fff;
   top: 151px;
-  left: 346px;
+  left: 374px;
 }
 
 .header__button {
@@ -223,11 +231,10 @@ body {
 
 .cards__holder {
   display: flex;
-  justify-content: center;
 }
 
 .cards__card {
-  width: 349px;
+  width: 100%;
   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
   margin-right: 31px;
   background-color: #fff;
@@ -263,6 +270,7 @@ body {
 }
 
 .history {
+  justify-content: center;
   margin-top: 166px;
   padding-bottom: 200px;
 }
@@ -332,6 +340,18 @@ body {
   z-index: 2;
   top: 121px;
   left: -102px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Tinos", serif;
+  background-color: #c4bfbf;
+  padding: 50px 0px;
+  text-align: center;
+  color: #000;
+  font-size: 24px;
 }
 
 .black {
@@ -490,8 +510,7 @@ body {
 
 .coment {
   background-color: #E5E5E5;
-  padding-top: 104px;
-  padding-bottom: 139px;
+  padding: 104px 0px;
 }
 
 .coment__text {
@@ -548,9 +567,13 @@ body {
   margin-right: 20px;
 }
 
-.galery__down, .galery__up {
+.galery__middle, .galery__up {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.galery__up-preadaptive {
   margin-bottom: 20px;
 }
 
@@ -572,19 +595,9 @@ body {
 
 .cook__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 .cook__content img {
-  margin-left: -85px;
-  margin-right: 113px;
-}
-
-.footer {
-  font-family: "Tinos", serif;
-  background-color: #c4bfbf;
-  padding: 50px 0px;
-  text-align: center;
-  color: #000;
-  font-size: 24px;
+  margin-right: 20px;
 }
